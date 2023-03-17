@@ -25,8 +25,7 @@
         
         <nav class="nav">
           <a class="logo" href="./index.html"
-            ><span class="logo-span">Web</span>Studio</a
-          >
+            ><span class="logo-span">Web</span>Studio</a>
           <ul class="site-nav">
             <li class="item">
               <a class="nav-link current" href="./index.html">Studio</a>
@@ -47,6 +46,73 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="burger" data-menu-open>
+          <svg class= burger-icon width="32px" height="22px">
+            <use href="./images/symbol-defs.svg#icon-Hamburg"></use>
+          </svg>
+        </button>
+      </div>
+      
+      <div class="mobile-menu data-menu " >
+        <div class="container container-menu">
+          <button class="close-menu"  type="button" data-menu-close>
+            <svg class="close-icon close-menu-icon">
+              
+              <use href="./images/symbol-defs.svg#xrect"></use>
+            </svg>
+          </button>
+            <ul class="nav-menu">
+              <li class="nav-menu-item"><a href="">Studio</a></li>
+              <li class="nav-menu-item"><a href="">Portfolio</a></li>
+              <li class="nav-menu-item"><a href="">Contacts</a></li>
+            </ul>
+            <ul class="address-menu">
+              <li class="item-tel"><a class="tel-menu" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+              <li class="item-mail"><a class="mail-menu" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+            <ul class="network-menu">
+              <li>
+                <a href="" class="network-link">
+                  <svg class="network-icon">
+                    <use
+                      href="./images/symbol-defs.svg#icon-instagram-2"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a href="" class="network-link">
+                  <svg class="network-icon">
+                    <use
+                      href="./images/symbol-defs.svg#icon-twitter-1"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a href="" class="network-link">
+                  <svg class="network-icon">
+                    <use
+                      href="./images/symbol-defs.svg#icon-facebook-1"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a href="" class="network-link">
+                  <svg class="network-icon">
+                    <use
+                      href="./images/symbol-defs.svg#icon-linkedin-1"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+
+        </div>
       </div>
     </header>
     <main>
@@ -143,7 +209,7 @@
                       href="./images/symbol-defs.svg#icon-Checked"
                     ></use></svg>
                 </span>
-                I accept the terms and conditions of the&#160<a href="" class="priv-policy">PrivacyPolicy</a>
+                I accept the terms and conditions of the&#160 <a href="" class="priv-policy">PrivacyPolicy</a>
               </label>
             </div>
 
@@ -552,8 +618,7 @@
         <form class="footer-form">
           <!-- <div class="form-flex"> -->
             
-              <p class="footer-label">Subscribe</p></label
-            >
+              <p class="footer-label">Subscribe</p></label>
            <div class="form-flex">
             <input
               class="input-footer"
@@ -573,6 +638,7 @@
         </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
