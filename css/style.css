@@ -138,22 +138,22 @@ img {
 }
 /* work */
 .work {
-  display: none;
+  
   margin: auto;
   padding-bottom: 120px;
 }
 
-/* .work-list {
+.work-list {
   display: flex;
   margin-top: 72px;
-} */
+}
 
-/* .work-list > li {
+.work-list > li {
   width: calc((100% - 48px) / 3);
 }
 .work-list li + li {
   margin-left: 24px;
-} */
+}
 
 /* Our Team */
 .tittle-team{
@@ -273,18 +273,11 @@ img {
   display: flex;
   flex-wrap: wrap;
 } */
-.content-item {
-  /* margin-right: 24px; */
-  margin-bottom: 48px;
-  width: calc((100% - 48px) / 3);
-}
 
-.content-item:nth-child(3n) {
-  margin-right: 0px;
-}
-.content-item:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
-}
+  /* margin-right: 24px; */
+
+
+
 .content-link {
   display: block;
   box-shadow: none;
@@ -296,14 +289,20 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.button-list {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 72px;
+
+  .button-list{
+    display: flex;
+      flex-wrap: wrap;
+      gap:24px;
+  }
+
+.button-list:not(:last-child){
+  margin-bottom:48px;
 }
-.button-item:not(:first-child) {
-  margin-left: 24px;
+.portfolio{
+  padding: 48px 0 48px 0;
 }
+
 
 /* buttons */
 .button {
@@ -495,12 +494,38 @@ img {
     margin:auto;
     
   }
+  .socmedia{
+    margin-bottom: 72px;
+    
+  }
+  .input-footer{
+    margin-bottom: 16px;
+    width:100%;
+  }
+  .footer{
+    text-align: center;
+  }
+  .submit-footer{
+    margin: auto;
+  }
+  .content-item{
+    margin-bottom:48px ;
+  }
   
   
 }
-@media screen and (max-width:1200px){
+@media screen and (max-width:1199px){
   .text-advantages{
     font-weight: 500;
+  }
+  .foot-nav{
+    margin-bottom: 72px;
+  }
+  .footer-form{
+    margin:auto;
+  }
+  .work{
+    display: none;
   }
 }
 
@@ -517,7 +542,7 @@ img {
 .footer {
   background-color: var(--primary-text-color);
   padding: 97px 0px 96px 0;
-  text-align: center;
+ 
 }
 
 .logo.footers {
@@ -532,9 +557,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.footer-form{
-  margin:auto;
-}
+
 /* .footer-container {
   display: flex;
 } */
@@ -581,7 +604,7 @@ img {
   
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin:auto;
+  
 }
 .icon-teleg{
   margin-left: 16px;
@@ -592,10 +615,9 @@ img {
 }
 
 .input-footer {
-  width: 264px;
   height: 40px;
   background-color: transparent;
-  border: 1px solid #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   
@@ -609,7 +631,7 @@ img {
 
 .input-footer::placeholder {
   
-  color: var(--white-text-color);
+  color: rgba(255, 255, 255, 0.3);
   
 }
 
@@ -1021,6 +1043,22 @@ letter-spacing: 0.02em;
       justify-content: center;
       
     }
+    .button-list{
+      
+      
+      margin-bottom:64px;
+      justify-content: center;
+    }
+    .content-list{
+      display: flex;
+      flex-wrap: wrap;
+      gap:72px 24px;
+    }
+    .portfolio{
+      padding: 64px 0 96px 0;
+    }
+   
+
     
 }
 @media screen and (min-width:768px) and (max-width:1200px){
@@ -1037,11 +1075,42 @@ letter-spacing: 0.02em;
   }
   .customers-list{
     width:552px;
+    gap:72px 24px;
   }
   .customers-item {
     width: calc((100% - 48px) / 3);
     height: 88px;
   }
+  .desktop-flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap:24px;
+    width:552px;
+    margin:auto;
+  }
+  .form-flex{
+    display: flex;
+    gap:24px;
+    width:552px;
+    margin: auto;
+  }
+  .foot-nav{
+    width:264px;
+  }
+  .input-footer{
+    width:264px;
+  }
+  .subscribe-label{
+    width:552px;
+    margin: auto;
+    margin-bottom:16px;
+  }
+  .content-item{
+    width:calc((100% - 24px) / 2);
+     
+  }
+  
+  
 }
 @media screen and (min-width:1200px) {
   .container{
@@ -1097,7 +1166,40 @@ letter-spacing: 0.02em;
   width: calc((100% - 120px) / 6);
   height: 88px;
 }
+.customers-list{
+  gap:24px;
+}
+.footer-container{
+  display: flex;
+}
+.desktop-flex{
+  display: flex;
 
+}
+.form-flex{
+  display: flex;
+  gap:24px;
+  align-items: center;
+}
+.foot-nav{
+  margin-right: 120px;
+  width:264px;
+}
+.socmedia{
+  margin-right: 80px;
+}
+.input-footer{
+  width:264px;
+}
+.button-list{
+  margin-bottom:72px;
+}
+.content-list{
+  gap:48px 24px;
+}
+.portfolio{
+  padding: 96px 0 120px 0;
+}
 }
 
 
