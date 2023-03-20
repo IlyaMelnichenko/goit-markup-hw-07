@@ -978,6 +978,9 @@ letter-spacing: 0.02em;
   object-fit: contain;
 }
 .close-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
   position: absolute;
   top:24px;
