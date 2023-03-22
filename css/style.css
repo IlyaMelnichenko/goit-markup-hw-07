@@ -126,15 +126,49 @@ img {
 }
 /* solutions */
 .solutions {
-  padding: 188px 0px;
-  background-image: url("../images/Dark-bg\ \(1\).png"),
-    url("../images/background-solutions.jpg");
+  padding: 112px 0px;
+  background-image: url("../images/Dark-mobile.png"),
+    url("../images/hero-mobile1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 1440px;
+  
   
   margin: auto;
+}
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution:2dppx){
+  .solutions{
+    background-image:url("../images/Dark-mobile.png"),url("../images/hero-mobil2x.jpg");
+  }
+}
+@media screen and (min-width:768px) {
+  .solutions{
+    padding: 112px 0px 108px 0px;
+  background-image:url("../images/Dark-tablet.png"),url("../images/hero-tablet1x.jpg");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width:768px),
+screen and (min-resolution: 192dpi) and (min-width:768px),
+screen and (min-resolution:2dppx) and (min-width:768px){
+  .solutions{
+    background-image:url("../images/Dark-tablet.png"), url("../images/hero-tablet2x.jpg");
+  }
+}
+@media screen and (min-width:1200px) {
+  .solutions{
+  padding: 188px 0px;
+  background-image:url("../images/Dark-bg\ \(1\).png"), url("../images/hero-desk1x.jpg");
+  max-width: 1440px;
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width:1200px),
+screen and (min-resolution: 192dpi) and (min-width:1200px),
+screen and (min-resolution:2dppx) and (min-width:1200px){
+  .solutions{
+    background-image:url("../images/Dark-bg\ \(1\).png"), url("../images/hero-desk2x.jpg");
+  }
+}
 }
 /* work */
 .work {
