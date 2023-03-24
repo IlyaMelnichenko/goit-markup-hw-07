@@ -748,6 +748,7 @@ screen and (min-resolution:2dppx) and (min-width:769px){
 .priv-policy{
   color: var(--iris-color);
   text-decoration: underline;
+  margin-left: 2px;
 }
 
 .modal-form {
@@ -1227,6 +1228,11 @@ letter-spacing: 0.02em;
 .portfolio{
   padding: 96px 0 120px 0;
 }
+}
+@media screen and (max-width:386px) {
+  .checkbox-label {
+    font-size: 9px;
+  } 
 }
 @media screen and (max-width:434px){
   .network-menu{
