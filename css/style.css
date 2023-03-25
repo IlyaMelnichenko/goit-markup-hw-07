@@ -1126,12 +1126,15 @@ letter-spacing: 0.02em;
   }
   .subscribe-label{
     width:552px;
-    margin: auto;
+    
     margin-bottom:16px;
   }
   .content-item{
     width:calc((100% - 24px) / 2);
      
+  }
+  .footer-container{
+    width:584px;
   }
  
   
@@ -1295,6 +1298,12 @@ letter-spacing: 0.02em;
   }
   .desktop-flex{
     margin-bottom: 72px;
+  }
+}
+@media (orientation: landscape) {
+  .modal{
+    align-items: flex-start;
+  }
   }
 }
 
