@@ -1301,11 +1301,11 @@ letter-spacing: 0.02em;
   }
 }
 @media (orientation: landscape) {
-  .modal{
-    align-items: flex-start;
+  .backdrop{align-items: flex-start;
   }
+  
   }
-}
+
 
 
 
